@@ -1,0 +1,36 @@
+.download-section {
+    padding-bottom: 30px;
+
+    h1 {
+        text-align: center;
+        padding-top: 80px;
+        font-size: 24px;
+        color: $dark-blue;
+        padding-bottom: 24px;
+    }
+
+    a {
+        font-size: 16px;
+        color: $dark-blue;
+        padding: 4px 22px;
+        margin: 10px 20px;
+
+        img {
+            padding-right: 16px;
+            height: 22px;
+        }
+    }
+
+    .downloads-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .download {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

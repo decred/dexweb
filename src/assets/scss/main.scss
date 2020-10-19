@@ -3,9 +3,34 @@
 @import "accordion.scss";
 @import "cover.scss";
 @import "intro.scss";
-@import "getting-started.scss";
+@import "get-started.scss";
+@import "downloads.scss";
 @import "footer.scss";
+
+html {
+  scroll-behavior: smooth;
+}
 
 .bold {
   font-weight: bold;
+}
+
+.btn-primary {
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: $highlight-blue !important;
+  border-color: $highlight-blue !important;
+}
+
+.btn-primary:hover {
+  background-color: $light-blue !important;
+  border-color: $light-blue !important;
 }

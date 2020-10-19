@@ -1,5 +1,5 @@
 .intro-section {
-  padding-top: 120px;
+  padding-top: 100px;
 
   h1 {
       font-size: 16px;
@@ -8,10 +8,10 @@
   }
 
   .accordion {
-    height: 700px;
+    height: 625px;
 
     label {
-      font-size: 36px;
+      font-size: 24px;
     }
 
     .accordion-body {
@@ -19,4 +19,36 @@
     }
 
   }
+
+ 
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    .accordion{
+      height: 650px;
+      label {
+          font-size: 32px;
+      }
+    }
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .accordion{
+      height: 675px;
+      label {
+          font-size: 36px;
+      }
+    }
+  }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    .accordion{
+      height: 670px;
+      label {
+          font-size: 36px;
+      }
+    }
+  }
+
 }

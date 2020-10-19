@@ -1,18 +1,55 @@
 <footer> 
     <div class="row m-0">
-        <div class="col-12 col-md-6 light-blue d-flex justify-content-center">
+        <div class="col-12 col-lg-6 light-blue d-flex justify-content-center">
             <div class="foot-wrapper d-flex">
-                <img src="/images/footer-dex-logo.png" class="footer-icon">
+                {{ $dexlogo := resources.Get "/images/dex-logo.svg" }}
+                <img src="{{ $dexlogo.Permalink }}" class="footer-icon">
                 <div class="d-flex flex-column">
-                    <h1>Launch DCRDEX →</h1>
+                    <h1>DCRDEX</h1>
                     <p>
                         DCRDEX currently supports trading pairs for:
-                        <ul>
-                            <li>Decred</li>
-                            <li>Bitcoin</li>
-                            <li>Litecoin</li>
-                        </ul>
                     </p>
+
+                    <ul>
+                        <li style="padding-right: 40px;">
+                            {{ $decredlogo := resources.Get "/images/decred-logo.svg" }}
+                            <img height="12px" src="{{ $decredlogo.Permalink }}" />
+                            <span class="bold">Decred</span>
+                        </li>
+                        <li style="padding-right: 40px;">
+                            {{ $btclogo := resources.Get "/images/btc-logo.svg" }}
+                            <img height="14px" src="{{ $btclogo.Permalink }}" />
+                            <span class="bold">Bitcoin</span>
+                        </li>
+                        <li>
+                            {{ $ltclogo := resources.Get "/images/ltc-logo.svg" }}
+                            <img height="12px" src="{{ $ltclogo.Permalink }}" />
+                            <span class="bold">Litecoin</span>
+                        </li>
+                    </ul>
+
+                    <p>
+                        Download DCRDEX client:
+                    </p>
+
+                    <ul>
+                        <li style="padding-right: 19px;">
+                            {{ $win := resources.Get "/images/win.svg" }}
+                            <img height="14px" src="{{ $win.Permalink }}" />
+                            <a href="{{ $.Site.Params.win_url }}">Windows</a>
+                        </li>
+                        <li style="padding-right: 19px;">
+                            {{ $mac := resources.Get "/images/mac.svg" }}
+                            <img height="14px" src="{{ $mac.Permalink }}" />
+                            <a href="{{ $.Site.Params.mac_url }}">macOS</a>
+                        </li>
+                        <li>
+                            {{ $linux := resources.Get "/images/linux.svg" }}
+                            <img height="14px" src="{{ $linux.Permalink }}" />
+                            <a href="{{ $.Site.Params.lin_url }}">Linux</a>
+                        </li>
+                    </ul>
+
                     <p>
                         Additional cryptocurrencies including <span
                         class="bold">Ethereum</span> and
@@ -20,14 +57,18 @@
                         incrementally in the coming months.
                     </p>
                     <p class="larger">
-                        Want to add your cryptocurrency? See Dev Docs → 
+                        Want to add your cryptocurrency?
+                        <a class="devdocs" href="https://github.com/decred/dcrdex" target="_blank" rel="noopener noreferrer">
+                            See Dev Docs → 
+                        </a>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 dark-blue d-flex justify-content-center">
+        <div class="col-12 col-lg-6 dark-blue d-flex justify-content-center">
             <div class="foot-wrapper d-flex">
-                <img src="/images/footer-dex-logo.png" class="footer-icon">
+                {{ $decredlogo := resources.Get "/images/decred-logo.svg" }}
+                <img src="{{ $decredlogo.Permalink }}" class="footer-icon">
                 <div class="d-flex flex-column">
                     <h1>Join the Community</h1>
                     <p>
@@ -36,28 +77,54 @@
                         with developers and other users, get information and ask
                         questions. We can’t wait to meet you!
                     </p>
-                    <div class="row socials">
-                        <div class="col-6 social">
-                            <img src="/images/iconGithub.svg" />GitHub
+                    <div class="row socials pt-2">
+                        <div class="col-6">
+                            <a class="social" href="https://github.com/decred/dcrdex" target="_blank" rel="noopener noreferrer">
+                                {{ $iconGithub := resources.Get "/images/iconGithub.svg" }}
+                                <img src="{{ $iconGithub.Permalink }}" />
+                                <div>GitHub</div>
+                            </a>
                         </div>
-                        <div class="col-6 social">
-                            <img src="/images/iconReddit.svg" />Reddit
+                        <div class="col-6">
+                            <a class="social" href="https://www.reddit.com/r/decred/" target="_blank" rel="noopener noreferrer">
+                                {{ $iconReddit := resources.Get "/images/iconReddit.svg" }}
+                                <img src="{{ $iconReddit.Permalink }}" />
+                                <div>Reddit</div>
+                            </a>
                         </div>
-                        <div class="col-6 social">
-                            <img src="/images/iconTwitter.svg" />Twitter
+                        <div class="col-6">
+                            <a class="social" href="https://twitter.com/decredproject" target="_blank" rel="noopener noreferrer">
+                                {{ $iconTwitter := resources.Get "/images/iconTwitter.svg" }}
+                                <img src="{{ $iconTwitter.Permalink }}" />
+                                <div>Twitter</div>
+                            </a>
                         </div>
-                        <div class="col-6 social">
-                            <img src="/images/iconMatrix.svg" />Matrix
+                        <div class="col-6">
+                            <a class="social" href="https://chat.decred.org/" target="_blank" rel="noopener noreferrer">
+                                {{ $iconMatrix := resources.Get "/images/iconMatrix.svg" }}
+                                <img src="{{ $iconMatrix.Permalink }}" />
+                                <div>Matrix</div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-12 light-blue copyright d-flex align-items-center">
-        <div class="container bold">
-            © 2020 Decred Developers, All Rights Reserved.
-        </div>
+    <div class="col-12 bottom-blue copyright ">
+        <div class="container h-100">
+            <div class="row h-100 d-flex align-items-center">
+                <div class="col-12 col-lg-6 bold">
+                    © 2020 Decred Developers, All Rights Reserved.
+                </div>
+                <div class="col-12 col-lg-6 text-lg-right">
+                    DCRDEX development is funded by
+                    <a href="https://proposals.decred.org/proposals/417607a" target="_blank" rel="noopener noreferrer">
+                        Decred Project Treasury
+                    </a>
+                </div>
+            </div>
+        </div> 
     </div>
 </footer>
 

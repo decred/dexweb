@@ -4,7 +4,15 @@ footer {
   .foot-wrapper {
     padding-top: 70px;
     padding-bottom: 50px;
+  }
 
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: underline;
+    color: white;
   }
 
   .footer-icon {
@@ -14,18 +22,37 @@ footer {
 
   h1 {
     font-size: 34px;
+    padding-bottom: 16px;
+  }
+
+  p {
+    max-width: 331px;
   }
 
   p, ul {
-    max-width: 331px;
-    font-size: 13px;
+    margin-bottom: 6px;
   }
 
   ul {
+    list-style-type: none;
     margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  li img {
+    padding-right: 5px;
   }
 
   p.larger {
+    padding-top: 10px;
     font-size: 16px;
   }
 
@@ -34,11 +61,20 @@ footer {
   }
 
   .dark-blue {
+    background-color: $footer-blue;
+  }
+
+  .bottom-blue {
     background-color: $dark-blue;
   }
 
   .copyright {
-    height: 90px;
+    padding: 40px;
+
+    .container {
+      justify-content: space-between;
+    }
+
     font-size: 12px;
   }
 
@@ -46,11 +82,13 @@ footer {
     max-width: 300px;
   
     .social {
-      padding: 8px;
-   
+      margin: 8px 14px;
+      display: flex;
+      flex-direction: row;
+
       img {
-        height: 22px;
-        padding-right: 8px;
+        height: 23px;
+        margin-right: 8px;
       }
     }
   }

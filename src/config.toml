@@ -1,2 +1,17 @@
 languageCode = "en-us"
-title = "DCRDEX - Decentralized Cryptocurrecy Exchange"
+title = "DCRDEX | Cryptocurrency Exchange"
+baseurl = "https://dex.jamieholdstock.com/"
+
+[params]
+  # Site image and description used to populate og tags.
+  images = ["/og-card.png"]
+  description = "DCRDEX is an open source, peer-to-peer cryptocurrency exchange built by the Decred Project."
+
+  # Client download URLs
+
+  # Windows
+  win_url = "https://github.com/decred/decred-binaries/releases/download/v1.6.0-rc1/dexc-windows-amd64-v0.1.0.zip"
+  # macOS
+  mac_url = "https://github.com/decred/decred-binaries/releases/download/v1.6.0-rc1/dexc-darwin-amd64-v0.1.0.tar.gz"
+  # Linux
+  lin_url = "https://github.com/decred/decred-binaries/releases/download/v1.6.0-rc1/dexc-darwin-amd64-v0.1.0.tar.gz"

@@ -1,0 +1,86 @@
+<section class="get-started-section">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 text-center">
+                {{ $getstarted := resources.Get "/images/get-started.png" }}
+                <img class="getstartedimg" src="{{ $getstarted.Permalink }}" />
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+
+                <div>
+                    <h1>How to Get Started</h1>
+                
+                    <div class="accordion">
+    
+                        <input type="radio" name="get-started-accordion" id="get-started-accordion-1" checked>
+                        <label for="get-started-accordion-1">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="plus-minus">
+                                    <div class="hznt"></div><div class="vrt"></div>
+                                </div>
+                                <div>1. Intro</div>
+                            </div>
+                        </label>
+                        <div class="accordion-body">
+                            Download, optionally verify, and run the installer,
+                            dexcinstall. This installer downloads, verifies, and
+                            configures the tools needed to use DCRDEX: dcrd,
+                            dcrwallet, bitcoind, and dexc.
+                        </div>
+                    
+                        <input type="radio" name="get-started-accordion" id="get-started-accordion-2">
+                        <label for="get-started-accordion-2">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="plus-minus">
+                                    <div class="hznt"></div><div class="vrt"></div>
+                                </div>
+                                <div>2. Setting up Wallets</div>
+                            </div>
+                        </label>
+                        <div class="accordion-body">
+                            Run dcrd to sync the Decred chain, dcrwallet to manage
+                            your decred, bitcoind to manage your bitcoin, and dexc
+                            to connect to the DCRDEX server.  Make a deposit to your
+                            Decred wallet of at least 1.0001 DCR.
+                        </div>
+                    
+                        <input type="radio" name="get-started-accordion" id="get-started-accordion-3">
+                        <label for="get-started-accordion-3">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="plus-minus">
+                                    <div class="hznt"></div><div class="vrt"></div>
+                                </div>
+                                <div>3. Account Fee</div>
+                            </div>
+                        </label>
+                        <div class="accordion-body">
+                            Once your chains are synced and wallets are registered
+                            with dexc, the DCRDEX client, you must pay a one-time
+                            fee of 1 DCR to the server and wait for the payment to
+                            confirm. This is done to make bad client behavior
+                            expensive.
+                        </div>
+                    
+                        <input type="radio" name="get-started-accordion" id="get-started-accordion-4">
+                        <label for="get-started-accordion-4">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="plus-minus">
+                                    <div class="hznt"></div><div class="vrt"></div>
+                                </div>
+                                <div>4. Placing Orders</div>
+                            </div>
+                        </label>
+                        <div class="accordion-body">
+                            To place an order, fill out the price, the lot quantity, and submit it.
+                        </div>
+    
+                        <div style="flex: 1;"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</section>

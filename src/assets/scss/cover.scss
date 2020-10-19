@@ -1,57 +1,69 @@
+$extra-cover-height: 180px;
+
 .cover-section {
-    position: relative;
-    background: no-repeat center/cover;
-    background-image:url(/images/landing-bg.gif);
-
-    color: white;
-
-    * {
-        z-index: 10;
+    .cover {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: no-repeat center/cover;
+        color: white;
+        height: 100vh;
     }
-
+    
     .cover-logo {
         img {
             top: 70px;
             position: absolute;
             height: 31px;
+            z-index: 10;
         }
     }
-
-    .btn-primary {
-        font-weight: bold;
-        font-size: 18px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
     
-    .btn-primary,
-    .btn-primary:hover,
-    .btn-primary:active,
-    .btn-primary:visited {
-        background-color: $highlight-blue !important;
-        border-color: $highlight-blue !important;
-    }
-
-    .btn-primary:hover {
-        background-color: $light-blue !important;
-        border-color: $light-blue !important;
-    }
-
-
     .cover-content {
+        z-index: 10;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .extra-cover {
+        position: relative;
+        height: $extra-cover-height;
+        background-color: $dark-blue;
+    }
+
+    .extra-cover img.product {
+        position: absolute;
+        margin: 0 auto;
+        padding: 0;
+        height: auto;
+        width: 100%;
+        max-width: 1400px;
+        left: 0;
+        right: 0;
+        bottom: 0;
         text-align: center;
     }
     
     h1 {
-        font-size: 54px;
         font-weight: bold;
     }
+
+    h1,
     h2 {
-        font-size: 54px;
+        font-size: 26px;
     }
     h3 {
-        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
     }
+
 }
 
 .cover-section::after {
@@ -66,4 +78,56 @@
         rgba(0, 0, 0, 0.15) 50%,
         rgba(0, 0, 0, 0.05) 100%
     );
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .cover-section {
+        h1,
+        h2 {
+            font-size: 34px;
+        }
+        h3 {
+            font-size: 14px;
+        }
+    }
+  }
+  
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .cover-section {
+        h1,
+        h2 {
+            font-size: 44px;
+        }
+        h3 {
+            font-size: 14px;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .cover-section {
+        h1,
+        h2 {
+            font-size: 54px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .cover-section {
+        h1,
+        h2 {
+            font-size: 54px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+    }
 }

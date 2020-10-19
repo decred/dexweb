@@ -1,4 +1,5 @@
 .accordion {
+  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -7,11 +8,13 @@
     opacity: 1;
     .vrt {
       transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
       transform: rotate(90deg);
       opacity: 0;
     }
     .hznt {
       transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
       transform: rotate(90deg);
       background-color: $highlight-blue;
     }
@@ -34,6 +37,7 @@
         margin-left: -1px;
         margin-top: -15px;
         transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
         transform: rotate(-90deg);
       }
       .hznt {
@@ -46,6 +50,7 @@
         margin-left: -15px;
         margin-top: -1px;
         transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
         transform: rotate(-90deg);
         opacity: 1;
       }
@@ -62,6 +67,7 @@
     font-size: 24px;
     cursor: pointer;
     transition: all .2s linear;
+    -webkit-transition: all .2s linear;
     margin-top: 26px;
     margin-bottom: 26px;
     
@@ -85,42 +91,11 @@
     padding: 0 1.5em;
     color: $p-text-color;
     flex: 1;
-    transition: flex 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
   }
 
   input[type='radio']:not(:checked) + label + div {
     flex: 0;
-  }
-}
-
-.accordion {
-   height: 550px;
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-  .accordion {
-    height: 550px;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .accordion {
-    height: 550px;
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .accordion {
-    height: 550px;
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .accordion {
-    height: 550px;
   }
 }

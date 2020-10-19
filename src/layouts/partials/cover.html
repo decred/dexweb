@@ -1,19 +1,34 @@
-<section class="d-flex flex-column vh-100 cover-section">
-    
-    <div class="container cover-logo">
-        <img src="/images/landing-logo.svg" />
+{{ $bg := resources.Get "/images/landing-bg.gif" }}
+
+<section class="cover-section">
+    <div class="cover" 
+        style="background-image:url('{{ $bg.Permalink }}');">
+        
+        <div class="container cover-logo">
+            {{ $landinglogo := resources.Get "/images/landing-logo.svg" }}
+            <img src="{{ $landinglogo.Permalink }}" />
+        </div>
+
+        
+        <div class="cover-content">
+            <h1>Trade crypto peer-to-peer.</h1>
+            <h2>No trading fees. No KYC.</h2>
+            <h3>
+                <span class="bold">DCRDEX</span> is a
+                <span class="bold">decentralized exchange</span>
+                built<br />by the Decred Project.
+            </h3>
+            <div class="mt-4">
+                <a class="btn btn-primary" href="#downloads" role="button">Download DCRDEX Client</a>
+            </div>
+        </div>
+        
     </div>
 
-    <div class="d-flex flex-column h-100 justify-content-center cover-content">
-        <h1>Trade crypto person-to-person.</h1>
-        <h2>No trading fees. No KYC.</h2>
-        <h3>
-            <span class="bold">DCRDEX</span> is a
-            <span class="bold">decentralized exchange</span>
-            built<br />by the Decred Project.
-        </h3>
-        <div class="mt-4">
-        <a class="btn btn-primary" href="" role="button">Launch DCRDEX →</a>
-        </div>
+    
+    <div class="extra-cover d-none d-lg-flex">
+        {{ $product := resources.Get "/images/product.png" }}
+        <img class="product" src="{{ $product.Permalink }}" />
     </div>
 </section>
+

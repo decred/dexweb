@@ -1,0 +1,26 @@
+.get-started-section {
+  
+  h1 {
+    padding-top: 30px;
+    font-size: 34px;
+    color: $highlight-blue;
+    padding-bottom: 24px;
+  }
+  
+  .getstartedimg {
+    padding-top: 40px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .accordion {
+    height: 600px;
+    max-width: 460px;
+
+    label {
+      font-size: 24px;
+    }
+    
+  }
+}
