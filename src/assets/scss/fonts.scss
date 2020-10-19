@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "dexweb-code";
+    src:
+        url("/fonts/SourceCodePro-Regular/SourceCodePro-Regular.ttf.woff2") format("woff2"),
+        url("/fonts/SourceCodePro-Regular/SourceCodePro-Regular.ttf.woff")  format("woff"),
+        url("/fonts/SourceCodePro-Regular/SourceCodePro-Regular.ttf")       format("truetype"),
+        url("/fonts/SourceCodePro-Regular/SourceCodePro-Regular.eot")       format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "dexweb";
+    src:
+        url("/fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf.woff2") format("woff2"),
+        url("/fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf.woff")  format("woff"),
+        url("/fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf")       format("truetype"),
+        url("/fonts/SourceSansPro-Regular/SourceSansPro-Regular.eot")       format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "dexweb";
+    src:
+        url("/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.ttf.woff2") format("woff2"),
+        url("/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.ttf.woff")  format("woff"),
+        url("/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.ttf")       format("truetype"),
+        url("/fonts/SourceSansPro-Semibold/SourceSansPro-Semibold.eot")       format("embedded-opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "dexweb";
+    src:
+        url("/fonts/SourceSansPro-It/SourceSansPro-It.ttf.woff2") format("woff2"),
+        url("/fonts/SourceSansPro-It/SourceSansPro-It.ttf.woff")  format("woff"),
+        url("/fonts/SourceSansPro-It/SourceSansPro-It.ttf")       format("truetype"),
+        url("/fonts/SourceSansPro-It/SourceSansPro-It.eot")       format("embedded-opentype");
+    font-style : italic;
+}
+
+@font-face {
+    font-family: "dexweb";
+    src:
+        url("/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.ttf.woff2") format("woff2"),
+        url("/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.ttf.woff")  format("woff"),
+        url("/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.ttf")       format("truetype"),
+        url("/fonts/SourceSansPro-SemiboldIt/SourceSansPro-SemiboldIt.eot")       format("embedded-opentype");
+    font-style : italic;
+    font-weight: bold;   
+}
+
+html, body {
+    font-family: "dexweb", "Verdana", sans-serif;
+}
+
+pre, code {
+    font-family: "dexweb-code", "Courier New", monospace;
+}
+
+// section {
+//     h1 {
+//         color         : #596D81;
+//         font-size     : 34px;
+//         text-transform: none;
+//     }
+
+//     h2 {
+//         color         : #091440;
+//         font-size     : 26px;
+//         text-transform: none;
+//         font-weight   : bold;
+//     }
+
+//     h3 {
+//         color         : #091440;
+//         font-size     : 23px;
+//         text-transform: none;
+//     }
+
+//     h4 {
+//         color         : #091440;
+//         font-size     : 20px;
+//         text-transform: none;
+//         font-weight   : bold;
+//     }
+
+//     h5 {
+//         color         : #091440;
+//         font-size     : 18px;
+//         text-transform: none;
+//     }
+
+//     h6 {
+//         color         : #596D81;
+//         font-size     : 16px;
+//         text-transform: none;
+//         font-weight   : bold;
+//     }
+
+//     p,
+//     ul,
+//     ol,
+//     table {
+//         color      : #48566E;
+//         font-size  : 16px;
+//         line-height: 22px;
+//     }
+
+//     table {
+//         border-spacing: 0;
+//         border-collapse: collapse;
+//         box-shadow    : 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+//         font-size     : 14px;
+//     }
+
+//     th {
+//         text-align      : left;
+//         padding         : 10px;
+//         background-color: #EDEFF1;
+//         font-weight     : bold;
+//         color           : #091440;
+//     }
+
+//     tr:not(:first-child) {
+//         border-top: 0.1rem solid rgba(0, 0, 0, 0.07);
+//     }
+
+//     td {
+//         padding   : 10px;
+//     }
+
+//     a {
+//         text-decoration: none;
+//     }
+
+//     a:link,
+//     a:visited {
+//         color: #2970FF;
+//     }
+//     a:hover,
+//     a:active {
+//         color: #1A59F7;
+//     }
+
+//     code {
+//         border-radius   : 3px;
+//         background-color: #EDEFF1;
+//         color           : #37474F;
+//         display         : inline-block;
+//         width           : auto;
+//         padding         : 5px;
+//     }
+
+//     pre > code {
+//         padding         : 20px;
+//     }
+// }

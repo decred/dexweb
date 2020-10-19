@@ -1,0 +1,21 @@
+.getting-started-section {
+  padding-top: 30px;
+  padding-bottom: 120px;
+  
+  h1 {
+      font-size: 34px;
+      color: $highlight-blue;
+      padding-bottom: 24px;
+  }
+
+  .accordion {
+    height: 500px;
+    max-width: 410px;
+
+    label {
+      font-size: 24px;
+    }
+    
+
+  }
+}

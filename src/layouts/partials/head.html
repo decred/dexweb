@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" {{ with .Site.LanguageCode }} lang="{{ . }}" {{ end }}>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ .Title }}</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+
+    {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $style := resources.Get "scss/main.scss" | resources.ToCSS $options | resources.Fingerprint  }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=oLn96O9Qmr">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=oLn96O9Qmr">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=oLn96O9Qmr">
+    <link rel="manifest" href="/site.webmanifest?v=oLn96O9Qmr">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=oLn96O9Qmr" color="#091440">
+    <link rel="shortcut icon" href="/favicon.ico?v=oLn96O9Qmr">
+    <meta name="apple-mobile-web-app-title" content="DCRDEX">
+    <meta name="application-name" content="DCRDEX">
+    <meta name="msapplication-TileColor" content="#091440">
+    <meta name="theme-color" content="#091440">
+    <!-- End favicon -->
+    
+</head>
+
+<body>

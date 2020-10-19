@@ -1,0 +1,79 @@
+footer {
+  color: #fff;
+
+  .foot-wrapper {
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+  }
+
+  .footer-icon {
+    padding-right: 23px;
+    height: 42px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  p, ul {
+    max-width: 331px;
+    font-size: 13px;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  p.larger {
+    font-size: 16px;
+  }
+
+  .light-blue {
+    background-color: $light-blue;
+  }
+
+  .dark-blue {
+    background-color: $dark-blue;
+  }
+
+  .copyright {
+    height: 90px;
+    font-size: 12px;
+  }
+
+  .socials {
+    max-width: 300px;
+  
+    .social {
+      padding: 8px;
+   
+      img {
+        height: 22px;
+        padding-right: 8px;
+      }
+    }
+  }
+
+  
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  
+}

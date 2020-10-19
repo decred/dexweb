@@ -1,0 +1,22 @@
+.intro-section {
+  padding-top: 120px;
+
+  h1 {
+      font-size: 16px;
+      color: $dark-blue;
+      padding-bottom: 4px;
+  }
+
+  .accordion {
+    height: 700px;
+
+    label {
+      font-size: 36px;
+    }
+
+    .accordion-body {
+      max-width: 573px;
+    }
+
+  }
+}
