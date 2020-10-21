@@ -10,8 +10,8 @@ baseurl = "https://dex.decred.org/"
   # Client download URLs
 
   # Windows
-  win_url = "https://github.com/decred/decred-binaries/releases/download/v1.6.0-rc1/dexc-windows-amd64-v0.1.0.zip"
+  win_url = "https://github.com/decred/decred-release/releases/download/v1.6.0-rc1/dcrinstall-windows-amd64-v1.6.0-rc1.exe"
   # macOS
-  mac_url = "https://github.com/decred/decred-binaries/releases/download/v1.6.0-rc1/dexc-darwin-amd64-v0.1.0.tar.gz"
+  mac_url = "https://github.com/decred/decred-release/releases/download/v1.6.0-rc1/dcrinstall-darwin-amd64-v1.6.0-rc1"
   # Linux
-  lin_url = "https://github.com/decred/decred-binaries/releases/download/v1.6.0-rc1/dexc-linux-amd64-v0.1.0.tar.gz"
+  lin_url = "https://github.com/decred/decred-release/releases/download/v1.6.0-rc1/dcrinstall-linux-amd64-v1.6.0-rc1"
