@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "DCRDEX | Cryptocurrency Exchange"
-baseurl = "https://dex.jamieholdstock.com/"
+baseurl = "https://dex.decred.org/"
 
 [params]
   # Site image and description used to populate og tags.
