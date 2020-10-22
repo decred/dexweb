@@ -1,7 +1,7 @@
 <footer> 
     <div class="row m-0">
         <div class="col-12 col-lg-6 light-blue d-flex justify-content-center">
-            <div class="foot-wrapper d-flex">
+            <div class="foot-wrapper">
                 {{ $dexlogo := resources.Get "/images/dex-logo.svg" }}
                 <img src="{{ $dexlogo.Permalink }}" class="footer-icon">
                 <div class="d-flex flex-column">
@@ -66,7 +66,7 @@
             </div>
         </div>
         <div class="col-12 col-lg-6 dark-blue d-flex justify-content-center">
-            <div class="foot-wrapper d-flex">
+            <div class="foot-wrapper">
                 {{ $decredlogo := resources.Get "/images/decred-logo.svg" }}
                 <img src="{{ $decredlogo.Permalink }}" class="footer-icon">
                 <div class="d-flex flex-column">
