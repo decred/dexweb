@@ -23,7 +23,7 @@ RUN hugo
 # Serve image (stable nginx version)
 FROM nginx:1.18
 
-LABEL description="dcrbounty server"
+LABEL description="dexweb server"
 LABEL version="1.0"
 LABEL maintainer="jholdstock@decred.org"
 
