@@ -3,26 +3,26 @@
 
         <h1>Download DCRDEX client</h1>
 
-        <div class="downloads-container">
+        <div class="downloads-container row">
 
-            <div class="download">
+            <div class="download col-12 col-sm-3">
                 {{ $winblue := resources.Get "/images/win-blue.svg" }}
                 <a href="{{ $.Site.Params.win_url }}">
-                    <img src="{{ $winblue.Permalink }}" />Windows x64  ↓
+                    <img src="{{ $winblue.Permalink }}" />Windows&nbsp;x64&nbsp;&nbsp;↓
                 </a>
             </div>
         
-            <div class="download">
+            <div class="download col-12 col-sm-3">
                 {{ $macblue := resources.Get "/images/mac-blue.svg" }}
                 <a href="{{ $.Site.Params.mac_url }}">
-                    <img src="{{ $macblue.Permalink }}" />macOS  ↓
+                    <img src="{{ $macblue.Permalink }}" />macOS&nbsp;&nbsp;↓
                 </a>
             </div>
         
-            <div class="download">
+            <div class="download col-12 col-sm-3">
                 {{ $linuxblue := resources.Get "/images/linux-blue.svg" }}
                 <a href="{{ $.Site.Params.lin_url }}">
-                    <img src="{{ $linuxblue.Permalink }}" />Linux x64  ↓
+                    <img src="{{ $linuxblue.Permalink }}" />Linux&nbsp;x64&nbsp;&nbsp;↓
                 </a>
             </div>
 

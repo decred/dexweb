@@ -22,15 +22,23 @@
     }
 
     .downloads-container {
+        max-width: 660px;
         display: flex;
+        margin: 0 auto;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
-
+    
     .download {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
+
+        a {
+            display: flex;
+            flex-wrap: 0;
+            flex-direction: row;
+        }
     }
 }

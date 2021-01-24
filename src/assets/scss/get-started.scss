@@ -8,19 +8,43 @@
   }
   
   .getstartedimg {
-    padding-top: 40px;
     width: 100%;
     max-width: 500px;
     height: auto;
   }
 
   .accordion {
-    height: 600px;
+    height: 680px;
     max-width: 460px;
 
     label {
-      font-size: 24px;
+      font-size: 22px;
     }
     
+  }
+
+  // Small devices (Very old phones, 690px and up)
+  @media (min-width: 690px) {
+    .accordion{
+      height: 650px;
+    }
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    .accordion{
+      height: 600px;
+  
+      label {
+        font-size: 24px;
+      }
+    }
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .getstartedimg {
+      padding-top: 40px;
+    }
   }
 }
