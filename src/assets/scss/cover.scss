@@ -1,13 +1,16 @@
-$extra-cover-height: 180px;
-
 .cover-section {
     .cover {
         display: flex;
         flex-direction: column;
-        position: relative;
-        background: no-repeat center/cover;
         color: white;
         height: 100vh;
+    }
+
+    #bgvid {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
     }
     
     .cover-logo {
@@ -26,28 +29,6 @@ $extra-cover-height: 180px;
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        background-size: contain;
-        background-position: bottom;
-        background-repeat: no-repeat;
-    }
-
-    .extra-cover {
-        position: relative;
-        height: $extra-cover-height;
-        background-color: $dark-blue;
-    }
-
-    .extra-cover img.product {
-        position: absolute;
-        margin: 0 auto;
-        padding: 0;
-        height: auto;
-        width: 100%;
-        max-width: 1400px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        text-align: center;
     }
     
     h1 {
