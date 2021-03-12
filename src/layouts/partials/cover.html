@@ -1,15 +1,18 @@
-{{ $bg := resources.Get "/images/landing-bg.gif" }}
-
 <section class="cover-section">
-    <div class="cover" 
-        style="background-image:url('{{ $bg.Permalink }}');">
+    <div class="cover">
         
+        {{ $bgpng := resources.Get "/images/landing-cover.png" }}
+        {{ $bgweb := resources.Get "/videos/landing-cover.webm" }}
+        <video playsinline autoplay muted loop poster="{{ $bgpng.Permalink }}" id="bgvid">
+            <source src="{{ $bgweb.Permalink }}" type="video/webm">
+        </video>
+
         <div class="container cover-logo">
             {{ $landinglogo := resources.Get "/images/landing-logo.svg" }}
             <img src="{{ $landinglogo.Permalink }}" />
         </div>
 
-        
+
         <div class="cover-content">
             <h1>Trade crypto peer-to-peer.</h1>
             <h2>No trading fees. No KYC.</h2>
@@ -25,10 +28,5 @@
         
     </div>
 
-    
-    <div class="extra-cover d-none d-lg-flex">
-        {{ $product := resources.Get "/images/product.png" }}
-        <img class="product" src="{{ $product.Permalink }}" />
-    </div>
 </section>
 
