@@ -15,3 +15,7 @@ baseurl = "https://dex.decred.org/"
   mac_url = "https://github.com/decred/decred-release/releases/download/v1.6.2/dcrinstall-darwin-amd64-v1.6.2.pkg"
   # Linux
   lin_url = "https://github.com/decred/decred-release/releases/download/v1.6.2/dcrinstall-linux-amd64-v1.6.2"
+  # Manifest
+  manifest_url = "https://github.com/decred/decred-release/releases/download/v1.6.2/dcrinstall-v1.6.2-manifest.txt"
+  # Manifest signature
+  manifest_sig_url = "https://github.com/decred/decred-release/releases/download/v1.6.2/dcrinstall-v1.6.2-manifest.txt.asc"

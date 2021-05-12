@@ -7,26 +7,31 @@
 
             <div class="download col-12 col-sm-3">
                 {{ $winblue := resources.Get "/images/win-blue.svg" }}
-                <a href="{{ $.Site.Params.win_url }}">
+                <a href="{{ $.Site.Params.win_url }}" rel="noopener noreferrer">
                     <img src="{{ $winblue.Permalink }}" />Windows&nbsp;x64&nbsp;&nbsp;↓
                 </a>
             </div>
         
             <div class="download col-12 col-sm-3">
                 {{ $macblue := resources.Get "/images/mac-blue.svg" }}
-                <a href="{{ $.Site.Params.mac_url }}">
+                <a href="{{ $.Site.Params.mac_url }}" rel="noopener noreferrer">
                     <img src="{{ $macblue.Permalink }}" />macOS&nbsp;&nbsp;↓
                 </a>
             </div>
         
             <div class="download col-12 col-sm-3">
                 {{ $linuxblue := resources.Get "/images/linux-blue.svg" }}
-                <a href="{{ $.Site.Params.lin_url }}">
+                <a href="{{ $.Site.Params.lin_url }}" rel="noopener noreferrer">
                     <img src="{{ $linuxblue.Permalink }}" />Linux&nbsp;x64&nbsp;&nbsp;↓
                 </a>
             </div>
 
         </div>
+
+        <p class="verify">To verify that the files have not been modified, also download the
+            <a href="{{ $.Site.Params.manifest_url }}" rel="noopener noreferrer">manifest</a> and the
+            <a href="{{ $.Site.Params.manifest_sig_url }}" rel="noopener noreferrer">signature</a>, and follow
+            <a href="https://docs.decred.org/advanced/verifying-binaries/" rel="noopener noreferrer">these steps</a>.</p>
 
     </div>
     

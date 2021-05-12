@@ -1,5 +1,4 @@
 .download-section {
-    padding-bottom: 30px;
 
     h1 {
         text-align: center;
@@ -9,19 +8,19 @@
         padding-bottom: 24px;
     }
 
-    a {
-        font-size: 16px;
-        color: $dark-blue;
-        padding: 4px 22px;
-        margin: 10px 20px;
-
-        img {
-            padding-right: 16px;
-            height: 22px;
-        }
-    }
-
     .downloads-container {
+        a {
+            font-size: 16px;
+            color: $dark-blue;
+            padding: 4px 22px;
+            margin: 10px 20px;
+    
+            img {
+                padding-right: 16px;
+                height: 22px;
+            }
+        }
+
         max-width: 660px;
         display: flex;
         margin: 0 auto;
@@ -40,5 +39,13 @@
             flex-wrap: 0;
             flex-direction: row;
         }
+    }
+
+    .verify {
+        max-width: 450px;
+        margin: 22px auto;
+        font-style: italic;
+        color: $p-text-color;
+        text-align: center;
     }
 }
