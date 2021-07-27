@@ -10,12 +10,12 @@ baseurl = "https://dex.decred.org/"
   # Client download URLs
 
   # Windows
-  win_url = "https://github.com/decred/decred-release/releases/download/v1.6.2/dcrinstall-windows-amd64-v1.6.2.exe"
+  win_url = "https://github.com/decred/decred-release/releases/download/v1.6.3/dcrinstall-windows-amd64-v1.6.3.exe"
   # macOS
-  mac_url = "https://github.com/decred/decred-release/releases/download/v1.6.2/dcrinstall-darwin-amd64-v1.6.2.pkg"
+  mac_url = "https://github.com/decred/decred-release/releases/download/v1.6.3/dcrinstall-darwin-amd64-v1.6.3.pkg"
   # Linux
-  lin_url = "https://github.com/decred/decred-release/releases/download/v1.6.2/dcrinstall-linux-amd64-v1.6.2"
+  lin_url = "https://github.com/decred/decred-release/releases/download/v1.6.3/dcrinstall-linux-amd64-v1.6.3"
   # Manifest
-  manifest_url = "https://github.com/decred/decred-release/releases/download/v1.6.2/dcrinstall-v1.6.2-manifest.txt"
+  manifest_url = "https://github.com/decred/decred-release/releases/download/v1.6.3/dcrinstall-v1.6.3-manifest.txt"
   # Manifest signature
-  manifest_sig_url = "https://github.com/decred/decred-release/releases/download/v1.6.2/dcrinstall-v1.6.2-manifest.txt.asc"
+  manifest_sig_url = "https://github.com/decred/decred-release/releases/download/v1.6.3/dcrinstall-v1.6.3-manifest.txt.asc"
