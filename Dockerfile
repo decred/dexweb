@@ -1,7 +1,7 @@
 # builder image
 FROM alpine:latest
 
-ENV HUGO_VERSION 0.82.1
+ENV HUGO_VERSION 0.88.1
 
 LABEL description="gohugo build"
 LABEL version="1.0"
