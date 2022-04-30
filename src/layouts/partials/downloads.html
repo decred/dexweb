@@ -1,38 +1,74 @@
 <section class="download-section" id="downloads">
     <div class="container">
 
-        <h1>Download DCRDEX client</h1>
+        <h1>DCRDEX is available in Decrediton</h1>
 
-        <div class="downloads-container row">
+        <div class="downloads-container">
 
-            <div class="download col-12 col-sm-3">
+            {{ $download_links := .Site.Data.wallets.links.release_page_1_6 }}
+
+            <div class="download">
                 {{ $winblue := resources.Get "/images/win-blue.svg" }}
-                <a href="{{ $.Site.Params.win_url }}" rel="noopener noreferrer">
-                    <img src="{{ $winblue.Permalink }}" />Windows&nbsp;x64&nbsp;&nbsp;↓
-                </a>
-            </div>
-        
-            <div class="download col-12 col-sm-3">
-                {{ $macblue := resources.Get "/images/mac-blue.svg" }}
-                <a href="{{ $.Site.Params.mac_url }}" rel="noopener noreferrer">
-                    <img src="{{ $macblue.Permalink }}" />macOS&nbsp;&nbsp;↓
-                </a>
-            </div>
-        
-            <div class="download col-12 col-sm-3">
-                {{ $linuxblue := resources.Get "/images/linux-blue.svg" }}
-                <a href="{{ $.Site.Params.lin_url }}" rel="noopener noreferrer">
-                    <img src="{{ $linuxblue.Permalink }}" />Linux&nbsp;x64&nbsp;&nbsp;↓
-                </a>
-            </div>
+                <div>
+                    <img src="{{ $winblue.Permalink }}"/>
+                    <span>Windows&nbsp;x64</span>
+                </div>
 
+                <div class="btn-bg">
+                    <a class="btn btn-primary" href="{{ $.Site.Params.win_decrediton_url }}" rel="noopener noreferrer">
+                        Download
+                    </a>
+                    <span>Sorry - no 32-bit</span>
+                </div>
+            </div>
+        
+            <div class="download">
+
+                {{ $macblue := resources.Get "/images/mac-blue.svg" }}
+                <div>
+                    <img src="{{ $macblue.Permalink }}"/>
+                    <span>macOS</span>
+                </div>
+
+                <div class="btn-bg">
+                    <a class="btn btn-primary" href="{{ $.Site.Params.mac_decrediton_url }}" rel="noopener noreferrer">
+                        Download
+                    </a>
+                    <a href="{{ $.Site.Params.m1_decrediton_url }}" rel="noopener noreferrer">
+                        Apple Silicon
+                    </a>
+                </div>
+            </div>
+        
+            <div class="download">
+
+                {{ $linuxblue := resources.Get "/images/linux-blue.svg" }}
+                <div>
+                    <img src="{{ $linuxblue.Permalink }}"/>
+                    <span>Linux&nbsp;x64</span>
+                </div>
+
+                <div class="btn-bg">
+                    <a class="btn btn-primary" href="{{ $.Site.Params.lin_decrediton_url }}" rel="noopener noreferrer">
+                        Download
+                    </a>
+                    <a href="{{ $.Site.Params.tar_decrediton_url }}" rel="noopener noreferrer">
+                        Prefer a tarball?
+                    </a>
+                </div>
+            </div>
+        
         </div>
 
-        <p class="verify">To verify that the files have not been modified, also download the
-            <a href="{{ $.Site.Params.manifest_url }}" rel="noopener noreferrer">manifest</a> and the
-            <a href="{{ $.Site.Params.manifest_sig_url }}" rel="noopener noreferrer">signature</a>, and follow
-            <a href="https://docs.decred.org/advanced/verifying-binaries/" rel="noopener noreferrer">these steps</a>.</p>
-
-    </div>
+        <div class="cli">
+            <a href="{{ $.Site.Params.dcrinstall_url }}" rel="noopener noreferrer">
+                Click here to download DCRDEX command line tools&nbsp;&nbsp;↓
+            </a>
+        </div>
+        
+        <p class="verify">
+            Follow <a href="https://docs.decred.org/advanced/verifying-binaries/" rel="noopener noreferrer">these steps</a>
+            to verify that the files you download are legitimate and have not been modified.
+        </p>
     
 </section>

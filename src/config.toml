@@ -7,15 +7,10 @@ baseurl = "https://dex.decred.org/"
   images = ["/og-card.png"]
   description = "DCRDEX is an open source, peer-to-peer cryptocurrency exchange built by the Decred Project."
 
-  # Client download URLs
-
-  # Windows
-  win_url = "https://github.com/decred/decred-release/releases/download/v1.7.1/dcrinstall-windows-amd64-v1.7.1.exe"
-  # macOS
-  mac_url = "https://github.com/decred/decred-release/releases/download/v1.7.1/dcrinstall-darwin-amd64-v1.7.1.pkg"
-  # Linux
-  lin_url = "https://github.com/decred/decred-release/releases/download/v1.7.1/dcrinstall-linux-amd64-v1.7.1"
-  # Manifest
-  manifest_url = "https://github.com/decred/decred-release/releases/download/v1.7.1/dcrinstall-v1.7.1-manifest.txt"
-  # Manifest signature
-  manifest_sig_url = "https://github.com/decred/decred-release/releases/download/v1.7.1/dcrinstall-v1.7.1-manifest.txt.asc"
+  # Download URLs
+  win_decrediton_url = "https://github.com/decred/decred-binaries/releases/download/v1.7.1/decrediton-v1.7.1.exe"
+  mac_decrediton_url = "https://github.com/decred/decred-binaries/releases/download/v1.7.1/decrediton-amd64-v1.7.1.dmg"
+  m1_decrediton_url  = "https://github.com/decred/decred-binaries/releases/download/v1.7.1/decrediton-arm64-v1.7.1.dmg"
+  lin_decrediton_url = "https://github.com/decred/decred-binaries/releases/download/v1.7.1/decrediton-v1.7.1.AppImage"
+  tar_decrediton_url = "https://github.com/decred/decred-binaries/releases/download/v1.7.1/decrediton-v1.7.1.tar.gz"
+  dcrinstall_url     = "https://github.com/decred/decred-release/releases/tag/v1.7.1"
