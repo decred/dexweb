@@ -1,51 +1,95 @@
 .download-section {
 
+    background-color: white;
+    color: $dark-blue;
+    text-align: center;
+
     h1 {
         text-align: center;
         padding-top: 80px;
-        font-size: 24px;
+        font-size: 28px;
         color: $dark-blue;
         padding-bottom: 24px;
     }
 
     .downloads-container {
-        a {
-            font-size: 16px;
-            color: $dark-blue;
-            padding: 4px 22px;
-            margin: 10px 20px;
-    
-            img {
-                padding-right: 16px;
-                height: 22px;
-            }
-        }
-
-        max-width: 660px;
         display: flex;
-        margin: 0 auto;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .download {
-        display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
 
-        a {
+        .download {
+               
             display: flex;
-            flex-wrap: 0;
-            flex-direction: row;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f1f1;
+            border: 2px solid #f1f1f1;
+            border-radius: 8px;
+            font-size: 16px;
+            padding: 0;
+            margin: 24px;
+
+            .btn-bg {
+                background: white;
+                border-radius: 0 0 8px 8px;
+                font-size: 14px;
+                padding-bottom: 12px;
+                color: $p-light-gray;
+            }
+    
+            a {
+                color: $p-light-gray;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            a.btn {
+                text-decoration: none;
+                margin: 30px 60px 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                font-size: 16px;
+                color: white;
+            }
+
+            img {
+                height: 40px;
+                width: 40px;
+                margin: 14px 14px 14px 0;
+            }
         }
+
+    }
+
+    .cli {
+        padding: 12px;
+        font-size: 16px;
+        
+        a,
+        a:visited,
+        a:hover,
+        a:active {
+            font-weight: bold;
+            color: $p-light-gray;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
     }
 
     .verify {
         max-width: 450px;
         margin: 22px auto;
         font-style: italic;
-        color: $p-text-color;
+        color: $p-dark-gray;
         text-align: center;
     }
 }
