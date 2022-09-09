@@ -11,12 +11,12 @@
                     </p>
 
                     <ul>
-                        <li style="padding-right: 40px;">
+                        <li style="padding-right: 44px;">
                             {{ $decredlogo := resources.Get "/images/decred-logo.svg" }}
                             <img height="12px" src="{{ $decredlogo.Permalink }}" />
                             <span class="bold">Decred</span>
                         </li>
-                        <li style="padding-right: 40px;">
+                        <li style="padding-right: 44px;">
                             {{ $btclogo := resources.Get "/images/btc-logo.svg" }}
                             <img height="14px" src="{{ $btclogo.Permalink }}" />
                             <span class="bold">Bitcoin</span>
@@ -25,6 +25,20 @@
                             {{ $ltclogo := resources.Get "/images/ltc-logo.svg" }}
                             <img height="12px" src="{{ $ltclogo.Permalink }}" />
                             <span class="bold">Litecoin</span>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li style="padding-right: 28px;">
+                            {{ $ltclogo := resources.Get "/images/btc-logo.svg" }}
+                            <img height="12px" style="transform: rotate(-25deg)" src="{{ $ltclogo.Permalink }}" />
+                            <span class="bold">Bitcoin Cash</span>
+                        </li>
+                        <li style="padding-right: 66px;">
+                            <span class="bold">Zcash</span>
+                        </li>
+                        <li>
+                            <span class="bold">Dogecoin</span>
                         </li>
                     </ul>
 
@@ -51,11 +65,11 @@
                     </ul>
 
                     <p>
-                        Additional cryptocurrencies including <span
-                        class="bold">Ethereum</span> and
-                        <span class="bold">Bitcoin Cash</span> will be deployed
-                        incrementally in the coming months.
+                        Or, download the
+                        <a href="{{ $.Site.Params.dexreleases_url }}" rel="noopener noreferrer">
+                        standalone application</a>.
                     </p>
+
                     <p class="larger">
                         Want to add your cryptocurrency?
                         <a class="devdocs" href="https://github.com/decred/dcrdex" target="_blank" rel="noopener noreferrer">
@@ -100,7 +114,7 @@
                             </a>
                         </div>
                         <div class="col-6">
-                            <a class="social" href="https://chat.decred.org/" target="_blank" rel="noopener noreferrer">
+                            <a class="social" href="https://chat.decred.org/#/room/#dex:decred.org" target="_blank" rel="noopener noreferrer">
                                 {{ $iconMatrix := resources.Get "/images/iconMatrix.svg" }}
                                 <img src="{{ $iconMatrix.Permalink }}" />
                                 <div>Matrix</div>
