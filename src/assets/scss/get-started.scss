@@ -14,7 +14,7 @@
   }
 
   .accordion {
-    height: 680px;
+    height: 920px;
     max-width: 460px;
 
     label {
@@ -26,14 +26,14 @@
   // Small devices (Very old phones, 690px and up)
   @media (min-width: 690px) {
     .accordion{
-      height: 650px;
+      height: 890px;
     }
   }
 
   // Medium devices (tablets, 768px and up)
   @media (min-width: 768px) {
     .accordion{
-      height: 600px;
+      height: 920px;
   
       label {
         font-size: 24px;
