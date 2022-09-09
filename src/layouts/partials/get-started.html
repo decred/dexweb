@@ -23,10 +23,25 @@
                             </div>
                         </label>
                         <div class="accordion-body">
-                            Download, optionally verify, and run the installer,
-                            <code>dcrinstall --dcrdex</code>. This installer downloads, verifies, and
-                            configures the tools needed to use DCRDEX: dcrd,
-                            dcrwallet, bitcoind, and dexc.
+                            <p>
+                                For the standalone DCRDEX application, <code>dexc</code>, the
+                                latest release can always be found on
+                                <a href="https://github.com/decred/dcrdex/releases/latest" target="_blank" rel="noopener noreferrer">
+                                    GitHub</a>.
+                                Download and extract the archive for your system, and
+                                <span class="bold">from a command prompt</span> in the extracted folder,
+                                run <code>dexc</code>. Open the displayed URL in the web browser
+                                of your choice.
+                            </p>
+                            <p>
+                                Alternatively, launch DEX from within Decrediton, Decred's
+                                full-featured GUI wallet.
+                            </p>
+                            <p>
+                                Detailed setup instructions are available on the
+                                <a href="https://github.com/decred/dcrdex/wiki/Client-Installation-and-Configuration#client-configuration"  target="_blank" rel="noopener noreferrer">
+                                wiki</a>.
+                            </p>
                         </div>
                     
                         <input type="radio" name="get-started-accordion" id="get-started-accordion-2">
@@ -35,33 +50,36 @@
                                 <div class="plus-minus">
                                     <div class="hznt"></div><div class="vrt"></div>
                                 </div>
-                                <div>2. Setting up Wallets</div>
+                                <div>2. Set a Password</div>
                             </div>
                         </label>
                         <div class="accordion-body">
-                            Run dcrd to sync the Decred chain, dcrwallet to manage
-                            your decred, bitcoind to manage your bitcoin, and dexc
-                            to connect to the DCRDEX server.  Make a deposit to your
-                            Decred wallet of at least 0.1001 DCR to cover the current
-                            registration fee plus network transaction fees. Additional
-                            assets will be supported for registration in the future.
+                            With DCRDEX opened in a browser or Decrediton, set a new "application
+                            password." Do not forget it!<br><br>
+                            <span class="bold">Tip:</span> Before moving on, retrieve the application
+                            "seed" from the settings page and store it in a safe place. This is used
+                            to restore wallets and accounts created by the DEX application. Click on
+                            the DCRDEX logo to resume setup.
                         </div>
-                    
+
                         <input type="radio" name="get-started-accordion" id="get-started-accordion-3">
                         <label for="get-started-accordion-3">
                             <div class="d-flex flex-row align-items-center">
                                 <div class="plus-minus">
                                     <div class="hznt"></div><div class="vrt"></div>
                                 </div>
-                                <div>3. Account Fee</div>
+                                <div>3. Configure Wallets</div>
                             </div>
                         </label>
                         <div class="accordion-body">
-                            Once your chains are synced and wallets are registered
-                            with dexc, the DCRDEX client, you must pay a one-time
-                            fee of 0.1 DCR to the server and wait for the payment to
-                            confirm. This is done to make bad client behavior
-                            expensive.
+                            <p>Choose a server and you will be guided through setup of your
+                            wallets.</p>
+                            <p>There are native (built-in to dexc) wallets for both Decred
+                            and Bitcoin. You may also use your own Electrum wallet for Bitcoin
+                            and Litecoin. For DOGE, ZEC, and BCH, use their full node wallets
+                            (e.g. dogecoind, zcashd, etc.).</p>
+                            <p>For the native wallets, just click "Create!".</p>
+                            <p>You can access the Wallets page at any time.</p>
                         </div>
                     
                         <input type="radio" name="get-started-accordion" id="get-started-accordion-4">
@@ -70,7 +88,27 @@
                                 <div class="plus-minus">
                                     <div class="hznt"></div><div class="vrt"></div>
                                 </div>
-                                <div>4. Placing Orders</div>
+                                <div>4. Connect to the Markets </div>
+                            </div>
+                        </label>
+                        <div class="accordion-body">
+                            Once your wallets are synchronized, you will be prompted
+                            to submit a one-time fee before placing orders. This is a small amount
+                            just to discourage disruptive behavior.<br><br>
+                            The application will inform you how much is required in your new wallet
+                            to register. But deposit as much as you like to your wallet 
+                            since only the required amount will be spent, and the remaining will be
+                            ready for trading. Deposits must confirm before proceeding. Then click
+                            "Register!" to proceed.
+                        </div>
+                    
+                        <input type="radio" name="get-started-accordion" id="get-started-accordion-5">
+                        <label for="get-started-accordion-5">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="plus-minus">
+                                    <div class="hznt"></div><div class="vrt"></div>
+                                </div>
+                                <div>5. Placing Orders</div>
                             </div>
                         </label>
                         <div class="accordion-body">
