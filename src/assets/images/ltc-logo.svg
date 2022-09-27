@@ -1,1 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="8.513" height="9.346" viewBox="0 0 8.513 9.346"><defs><style>.a{fill:#fff;}</style></defs><g transform="translate(-185 -2737)"><path class="a" d="M684.4,587.142l.607-2.286,1.437-.525.357-1.343-.012-.033-1.415.517,1.019-3.838h-2.891l-1.333,5.009-1.113.407-.368,1.385,1.112-.406-.786,2.952h7.693l.493-1.837h-4.8" transform="translate(-495.694 2157.367)"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg10"
+   version="1.1"
+   viewBox="0 0 8.513 9.346"
+   height="9.346"
+   width="8.513">
+  <metadata
+     id="metadata14">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <style
+       id="style2">.a{fill:#fff;}</style>
+  </defs>
+  <g
+     id="g8"
+     transform="matrix(0.85112145,0,0,0.85112145,-156.82473,-2328.8235)">
+    <path
+       style="fill:#ffffff"
+       id="path6"
+       transform="translate(-495.694,2157.367)"
+       d="m 684.4,587.142 0.607,-2.286 1.437,-0.525 0.357,-1.343 -0.012,-0.033 -1.415,0.517 1.019,-3.838 h -2.891 l -1.333,5.009 -1.113,0.407 -0.368,1.385 1.112,-0.406 -0.786,2.952 h 7.693 l 0.493,-1.837 h -4.8"
+       class="a" />
+  </g>
+</svg>

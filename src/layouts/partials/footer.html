@@ -10,37 +10,38 @@
                         DCRDEX currently supports trading pairs for:
                     </p>
 
-                    <ul>
-                        <li style="padding-right: 44px;">
+                    <div class="supported no-gutters">
+                        <div class="currency col-6 col-sm-4">
                             {{ $decredlogo := resources.Get "/images/decred-logo.svg" }}
-                            <img height="12px" src="{{ $decredlogo.Permalink }}" />
-                            <span class="bold">Decred</span>
-                        </li>
-                        <li style="padding-right: 44px;">
+                            <img src="{{ $decredlogo.Permalink }}" />
+                            <span>Decred</span>
+                        </div>
+                        <div class="currency col-6 col-sm-4">
                             {{ $btclogo := resources.Get "/images/btc-logo.svg" }}
-                            <img height="14px" src="{{ $btclogo.Permalink }}" />
-                            <span class="bold">Bitcoin</span>
-                        </li>
-                        <li>
+                            <img src="{{ $btclogo.Permalink }}" />
+                            <span>Bitcoin</span>
+                        </div>
+                        <div class="currency col-6 col-sm-4">
+                            {{ $bchlogo := resources.Get "/images/bch-logo.svg" }}
+                            <img src="{{ $bchlogo.Permalink }}" />
+                            <span>Bitcoin Cash</span>
+                        </div>
+                        <div class="currency col-6 col-sm-4">
                             {{ $ltclogo := resources.Get "/images/ltc-logo.svg" }}
-                            <img height="12px" src="{{ $ltclogo.Permalink }}" />
-                            <span class="bold">Litecoin</span>
-                        </li>
-                    </ul>
-
-                    <ul>
-                        <li style="padding-right: 28px;">
-                            {{ $ltclogo := resources.Get "/images/btc-logo.svg" }}
-                            <img height="12px" style="transform: rotate(-25deg)" src="{{ $ltclogo.Permalink }}" />
-                            <span class="bold">Bitcoin Cash</span>
-                        </li>
-                        <li style="padding-right: 66px;">
-                            <span class="bold">Zcash</span>
-                        </li>
-                        <li>
-                            <span class="bold">Dogecoin</span>
-                        </li>
-                    </ul>
+                            <img src="{{ $ltclogo.Permalink }}" />
+                            <span>Litecoin</span>
+                        </div>
+                        <div class="currency col-6 col-sm-4">
+                            {{ $zeclogo := resources.Get "/images/zec-logo.svg" }}
+                            <img src="{{ $zeclogo.Permalink }}" />
+                            <span>Zcash</span>
+                        </div>
+                        <div class="currency col-6 col-sm-4">
+                            {{ $dogelogo := resources.Get "/images/doge-logo.svg" }}
+                            <img src="{{ $dogelogo.Permalink }}" />
+                            <span>Dogecoin</span>
+                        </div>
+                    </div>
 
                     <p>
                         Download Decrediton to access DCRDEX:

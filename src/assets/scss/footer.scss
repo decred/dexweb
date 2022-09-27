@@ -21,6 +21,34 @@ footer {
     height: 42px;
   }
 
+  .supported {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin-bottom: 20px;
+
+    .currency {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
+      img {
+        height: 16px;
+        width: 16px;
+        margin-right: 8px;
+      }
+
+      span {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;  
+        margin-right: 12px;
+      }
+    }
+
+  }
+
   h1 {
     font-size: 34px;
     padding-bottom: 12px;
