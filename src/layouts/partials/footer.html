@@ -43,10 +43,7 @@
                         </div>
                     </div>
 
-                     <p style="font-weight: bold;">
-                        Decrediton downloads are temporarily unavailable. Check back later, or use the standalone application (below) instead.
-                    </p>
-                    <!--<p>
+                    <p>
                         Download Decrediton to access DCRDEX:
                     </p>
 
@@ -54,22 +51,22 @@
                         <li style="padding-right: 19px;">
                             {{ $win := resources.Get "/images/win.svg" }}
                             <img height="14px" src="{{ $win.Permalink }}" />
-                            <a class="disabled" href="{{ $.Site.Params.win_decrediton_url }}" rel="noopener noreferrer">Windows x64</a>
+                            <a href="{{ $.Site.Params.win_decrediton_url }}" rel="noopener noreferrer">Windows x64</a>
                         </li>
                         <li style="padding-right: 19px;">
                             {{ $mac := resources.Get "/images/mac.svg" }}
                             <img height="14px" src="{{ $mac.Permalink }}" />
-                            <a class="disabled" href="{{ $.Site.Params.mac_decrediton_url }}" rel="noopener noreferrer">macOS</a>
+                            <a href="{{ $.Site.Params.mac_decrediton_url }}" rel="noopener noreferrer">macOS</a>
                         </li>
                         <li>
                             {{ $linux := resources.Get "/images/linux.svg" }}
                             <img height="14px" src="{{ $linux.Permalink }}" />
-                            <a class="disabled" href="{{ $.Site.Params.lin_decrediton_url }}" rel="noopener noreferrer">Linux x64</a>
+                            <a href="{{ $.Site.Params.lin_decrediton_url }}" rel="noopener noreferrer">Linux x64</a>
                         </li>
-                    </ul>-->
+                    </ul>
 
                     <p>
-                        Download the
+                        Or, download the
                         <a href="{{ $.Site.Params.dexreleases_url }}" rel="noopener noreferrer">
                         standalone application</a>.
                     </p>
