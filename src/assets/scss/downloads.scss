@@ -49,12 +49,6 @@
             a:hover {
                 text-decoration: underline;
             }
-            a.disabled {
-                pointer-events: none;
-                cursor: default;
-                text-decoration: none;
-                color: lightgray;
-            }
             a.btn {
                 text-decoration: none;
                 margin: 30px 60px 18px;
