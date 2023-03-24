@@ -1,4 +1,4 @@
-# builder image
+# Build image
 FROM alpine:latest
 
 ENV HUGO_VERSION 0.110.0
@@ -25,7 +25,7 @@ RUN rm -rf public resources
 RUN hugo --buildFuture
 
 # Serve image (stable nginx version)
-FROM nginx:1.22
+FROM nginx:1.22-alpine
 
 LABEL description="dexweb server"
 LABEL version="1.0"
