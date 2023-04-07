@@ -66,9 +66,14 @@
                     </ul>
 
                     <p>
-                        Or, download the
+                        Download the
                         <a href="{{ $.Site.Params.dexreleases_url }}" rel="noopener noreferrer">
-                        standalone application</a>.
+                        standalone application</a>, <br/>
+                        {{ $umbrel := resources.Get "/images/umbrel.svg" }}
+                        or add it to your <img height="12px" src="{{ $umbrel.Permalink }}" /> 
+                        <a href="{{ $.Site.Params.umbrel_community_app_store_url }}" rel="noopener noreferrer">
+                            Umbrel
+                        </a>
                     </p>
 
                     <p class="larger">
