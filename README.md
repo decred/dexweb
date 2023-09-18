@@ -2,7 +2,7 @@
 
 This is the code for the <https://dex.decred.org> website.
 
-[![Build Status](https://travis-ci.org/decred/dexweb.png?branch=master)](https://travis-ci.org/decred/dexweb)
+[![Build Status](https://github.com/decred/dexweb/actions/workflows/docker.yml/badge.svg)](https://github.com/decred/dexweb/actions/workflows/docker.yml)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 
 ## Development
