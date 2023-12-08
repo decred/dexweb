@@ -41,6 +41,21 @@
                             <img src="{{ $dogelogo.Permalink }}" />
                             <span>Dogecoin</span>
                         </div>
+                        <div class="currency col-6 col-sm-4">
+                            {{ $ethlogo := resources.Get "/images/eth-logo.svg" }}
+                            <img src="{{ $ethlogo.Permalink }}" />
+                            <span>Ethereum</span>
+                        </div>
+                        <div class="currency col-6 col-sm-4">
+                            {{ $usdclogo := resources.Get "/images/usdc-logo.svg" }}
+                            <img src="{{ $usdclogo.Permalink }}" />
+                            <span>USDC</span>
+                        </div>
+                        <div class="currency col-6 col-sm-4">
+                            {{ $dgblogo := resources.Get "/images/dgb-logo.svg" }}
+                            <img src="{{ $dgblogo.Permalink }}" />
+                            <span>DigiByte</span>
+                        </div>
                     </div>
 
                     <p>
