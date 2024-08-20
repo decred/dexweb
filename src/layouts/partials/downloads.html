@@ -1,8 +1,108 @@
 <section class="download-section" id="downloads">
-    <div class="container">
+    <div class="my-5">
 
-        <h1>DCRDEX is available in Decrediton or as a standalone application</h1>
-        <h2>v0.6 is now released!</h2>
+        {{ $bwlogo := resources.Get "/images/bw-logo.png" }}
+        <img src="{{ $bwlogo.Permalink }}" class="mt-4">
+        <h4 class="mt-4">Bison Wallet is the official DCRDEX-compatible multi-wallet</h4>
+
+        <div class="downloads-container">
+
+            <div class="download">
+                {{ $winblue := resources.Get "/images/win-blue.svg" }}
+                <div>
+                    <img src="{{ $winblue.Permalink }}"/>
+                    <span>Windows&nbsp;x64</span>
+                </div>
+
+                <div class="btn-bg">
+                    <a class="btn btn-primary" href="{{ $.Site.Params.win_bisonw_installer_url }}" rel="noopener noreferrer">
+                        Installer
+                    </a>
+                    <a class="btn btn-primary" href="{{ $.Site.Params.win_bisonw_binary_url }}" rel="noopener noreferrer">
+                        Binary (EXE)
+                    </a>
+                    <span>Sorry - no 32-bit</span>
+                </div>
+            </div>
+
+            <div class="download">
+
+                {{ $macblue := resources.Get "/images/mac-blue.svg" }}
+                <div>
+                    <img src="{{ $macblue.Permalink }}"/>
+                    <span>macOS</span>
+                </div>
+
+                <div class="btn-bg">
+                    <a class="btn btn-primary" href="{{ $.Site.Params.mac_bisonw_installer_url }}" rel="noopener noreferrer">
+                        Installer
+                    </a>
+                    <a class="btn btn-primary" href="{{ $.Site.Params.mac_bisonw_binary_url }}" rel="noopener noreferrer">
+                        Binary
+                    </a>
+                    <a href="{{ $.Site.Params.mac_bisonw_binary_arm_url }}" rel="noopener noreferrer">
+                        Need ARM?
+                    </a>
+                </div>
+            </div>
+
+            <div class="download">
+
+                {{ $linuxblue := resources.Get "/images/linux-blue.svg" }}
+                <div>
+                    <img src="{{ $linuxblue.Permalink }}"/>
+                    <span>Linux&nbsp;x64</span>
+                </div>
+
+                <div class="btn-bg">
+                    <a class="btn btn-primary" href="{{ $.Site.Params.lin_bisonw_binary_url }}" rel="noopener noreferrer">
+                        Binary
+                    </a>
+                    <a class="btn btn-primary" href="{{ $.Site.Params.lin_bisonw_deb_url }}" rel="noopener noreferrer">
+                        Debian Installer
+                    </a>
+                    <a href="{{ $.Site.Params.lin_bisonw_arm_url }}" rel="noopener noreferrer">
+                        Need ARM?
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hide Umbrel until updated -->
+            <div class="download d-none">
+
+                {{ $umbrelblue := resources.Get "/images/umbrel-blue.svg" }}
+                <div>
+                    <img src="{{ $umbrelblue.Permalink }}"/>
+                    <span>Umbrel</span>
+                </div>
+
+                <div class="btn-bg">
+                    <a class="btn btn-primary" href="{{ $.Site.Params.umbrel_community_app_store_url }}" rel="noopener noreferrer">
+                        App Store
+                    </a>
+                    <a href="{{ $.Site.Params.umbrel_community_app_store_url }}" rel="noopener noreferrer">
+                        Decred Community App Store
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Hide Decrediton until updated -->
+    <div class="d-none"> <!-- Not indenting, because I will delete this container once we have links -->
+
+    <hr>
+
+    <div class="my-5">
+
+        {{ $bwlogo := resources.Get "/images/decrediton-logo.png" }}
+        <div class="d-inline-flex align-items-end mx-auto">
+            <img id="decreditonLogo" src="{{ $bwlogo.Permalink }}" class="mt-4">
+            <span id="decreditonLogoText"> Decrediton</span>
+        </div>
+
+        <h4 class="mt-4">Use DCRDEX in Decrediton, Decred's official desktop wallet.</h4>
 
         <div class="downloads-container">
 
@@ -20,7 +120,7 @@
                     <span>Sorry - no 32-bit</span>
                 </div>
             </div>
-        
+
             <div class="download">
 
                 {{ $macblue := resources.Get "/images/mac-blue.svg" }}
@@ -76,16 +176,13 @@
             </div>
 
         </div>
+    </div>
+    </div>
 
-        <div class="altdl">
-            <a href="{{ $.Site.Params.dexreleases_url }}" rel="noopener noreferrer">
-                Click here to download the standalone DCRDEX application instead&nbsp;&nbsp;↓
-            </a>
-        </div>
-        
+        <hr>
+
         <p class="verify">
             Follow <a href="https://docs.decred.org/advanced/verifying-binaries/" rel="noopener noreferrer">these steps</a>
             to verify that the files you download are legitimate and have not been modified.
         </p>
-    
 </section>
