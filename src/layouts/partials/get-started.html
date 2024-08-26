@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6 text-center">
-                {{ $getstarted := resources.Get "/images/get-started3.png" }}
+                {{ $getstarted := resources.Get "/images/showcase.png" }}
                 <img class="getstartedimg" src="{{ $getstarted.Permalink }}" />
             </div>
             <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
@@ -63,7 +63,7 @@
                                 If using Decrediton, navigate to the DCRDEX interface.
                             </p>
                             <p>
-                                Set a new "application password."
+                                Set a new "application password".
                                 Do not forget it!
                             </p>
                             <p>
@@ -83,15 +83,18 @@
                             </div>
                         </label>
                         <div class="accordion-body">
-                            The quick configuration dialog will offer you the
-                            option to intitialize built-in wallets and connect
-                            to known servers.
-
-                            If you aren't restoring from seed, you will be prompted
-                            to back up your newly generated application seed.
-                            Make sure to copy the seed carefully and put it somewhere safe.
-                            This seed is used to restore native wallets.
-                            Anyone with this seed has access to your funds.
+                            <p>
+                                The quick configuration dialog will offer you the
+                                option to intitialize built-in wallets and connect
+                                to known servers.
+                            </p>
+                            <p>
+                                If you aren't restoring from seed, you will be prompted
+                                to back up your newly generated application seed.
+                                Make sure to copy the seed carefully and put it somewhere safe.
+                                This seed is used to restore native wallets.
+                                Anyone with this seed has access to your funds.
+                            </p>
                         </div>
                     
                         <input type="radio" name="get-started-accordion" id="get-started-accordion-4">
@@ -104,15 +107,17 @@
                             </div>
                         </label>
                         <div class="accordion-body">
-                            Navigate to the settings view to connect to a DCRDEX access access trading markets.
-                            You can connect to a server and view market activity without cost, but if
-                            you want to trade, you'll need to post a bond
-                        <p>
-                        </p>
-                            A bond is some amount of funds that will remain locked up
-                            on-chain for a while before you can retrieve them.
-                            This is an anti-spam measure to keep trades completing
-                            with fewer refunds.
+                            <p>
+                                Navigate to the settings view and connect to a DCRDEX server to access trading markets.
+                                You can connect to a server and view market activity without cost, but if
+                                you want to trade, you'll need to post a bond
+                            <p>
+                            </p>
+                                A bond is some amount of funds that will remain locked up
+                                on-chain for a while before you can retrieve them.
+                                This is an anti-spam measure to keep trades completing
+                                with fewer refunds.
+                            </p>
                         </div>
                     
                         <input type="radio" name="get-started-accordion" id="get-started-accordion-5">
@@ -125,17 +130,20 @@
                             </div>
                         </label>
                         <div class="accordion-body">
-                            Once you are bonded and you have the necessary
-                            wallet configured, you'll see an order form in the
-                            markets view.
-
-                            Set your price, quantity, and whether you are buying
-                            or selling, and then place an order. Orders will take
-                            between 0 and 15 seconds to start matching.
-                            Once you get matches, a settlement phase will begin
-                            which, depending on the assets and network conditions,
-                            may last only a few minutes, or last an hour or more in the
-                            worst case. The price you matched will never change.
+                            <p>
+                                Once you are bonded and you have the necessary
+                                wallet configured, you'll see an order form in the
+                                markets view.
+                            </p>
+                            <p>
+                                Set your price, quantity, and whether you are buying
+                                or selling, and then place an order. Orders will take
+                                between 0 and 15 seconds to start matching.
+                                Once you get matches, a settlement phase will begin
+                                which, depending on the assets and network conditions,
+                                may last only a few minutes, or last an hour or more in the
+                                worst case. The price you matched will never change.
+                            </p>
                         </div>
     
                         <div style="flex: 1;"></div>
