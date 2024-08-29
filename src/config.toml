@@ -8,14 +8,15 @@ baseurl = "https://dex.decred.org/"
   description = "DCRDEX is an open source, peer-to-peer cryptocurrency exchange built by the Decred Project."
 
   # Bison Wallet URLs
-  win_bisonw_installer_url  = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-windows-amd64-v1.0.0.msi"
-  win_bisonw_binary_url     = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-tray-windows-amd64-v1.0.0.zip"
-  mac_bisonw_installer_url  = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-darwin-amd64-v1.0.0.dmg"
-  mac_bisonw_binary_url     = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-darwin-amd64-v1.0.0.tar.gz"
-  mac_bisonw_binary_arm_url = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-darwin-arm64-v1.0.0.tar.gz"
-  lin_bisonw_binary_url     = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-linux-amd64-v1.0.0.tar.gz"
-  lin_bisonw_deb_url        = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-debian-amd64-v1.0.0.deb"
-  lin_bisonw_arm_url        = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-linux-arm64-v1.0.0.tar.gz"
+  win_bisonw_installer_url      = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-windows-amd64-v1.0.0.msi"
+  win_bisonw_binary_url         = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-tray-windows-amd64-v1.0.0.zip"
+  mac_bisonw_installer_amd_url  = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-darwin-amd64-v1.0.0.dmg"
+  mac_bisonw_binary_amd_url     = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-darwin-amd64-v1.0.0.tar.gz"
+  mac_bisonw_installer_arm_url  = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-darwin-arm64-v1.0.0.dmg"
+  mac_bisonw_binary_arm_url     = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-darwin-arm64-v1.0.0.tar.gz"
+  lin_bisonw_binary_url         = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-linux-amd64-v1.0.0.tar.gz"
+  lin_bisonw_deb_url            = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-debian-amd64-v1.0.0.deb"
+  lin_bisonw_arm_url            = "https://github.com/decred/dcrdex/releases/download/v1.0.0/bisonw-linux-arm64-v1.0.0.tar.gz"
 
   # Decrediton URLs
   win_decrediton_url = "https://github.com/decred/decred-binaries/releases/download/v1.8.1/decrediton-v1.8.1.exe"
