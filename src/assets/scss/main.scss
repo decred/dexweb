@@ -34,3 +34,21 @@ html {
   background-color: $light-blue !important;
   border-color: $light-blue !important;
 }
+
+hr {
+  margin: 2rem 0;
+  border-top: 2px solid #0003;
+}
+
+#decreditonLogo {
+  border-radius: 8px;
+  height: 60px;
+  width: 60px;
+}
+
+#decreditonLogoText {
+  font-size: 65px;
+  margin-left: 1rem;
+  line-height: 0.8;
+  // font-weight: bold;
+}

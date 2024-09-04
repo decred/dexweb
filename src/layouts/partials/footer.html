@@ -47,14 +47,39 @@
                             <span>Ethereum</span>
                         </div>
                         <div class="currency col-6 col-sm-4">
+                            {{ $ethlogo := resources.Get "/images/matic-logo.svg" }}
+                            <img src="{{ $ethlogo.Permalink }}" />
+                            <span>Polygon</span>
+                        </div>
+                        <div class="currency col-6 col-sm-4">
                             {{ $usdclogo := resources.Get "/images/usdc-logo.svg" }}
                             <img src="{{ $usdclogo.Permalink }}" />
                             <span>USDC</span>
                         </div>
                         <div class="currency col-6 col-sm-4">
+                            {{ $dgblogo := resources.Get "/images/usdt-logo.svg" }}
+                            <img src="{{ $dgblogo.Permalink }}" />
+                            <span>Tether</span>
+                        </div>
+                        <div class="currency col-6 col-sm-4">
                             {{ $dgblogo := resources.Get "/images/dgb-logo.svg" }}
                             <img src="{{ $dgblogo.Permalink }}" />
                             <span>DigiByte</span>
+                        </div>
+                        <div class="currency col-6 col-sm-4">
+                            {{ $dgblogo := resources.Get "/images/firo-logo.svg" }}
+                            <img src="{{ $dgblogo.Permalink }}" />
+                            <span>Firo</span>
+                        </div>
+                        <div class="currency col-6 col-sm-4">
+                            {{ $dgblogo := resources.Get "/images/dash-logo.svg" }}
+                            <img src="{{ $dgblogo.Permalink }}" />
+                            <span>Dash</span>
+                        </div>
+                        <div class="currency col-6 col-sm-4">
+                            {{ $dgblogo := resources.Get "/images/zcl-logo.svg" }}
+                            <img src="{{ $dgblogo.Permalink }}" />
+                            <span>Zclassic</span>
                         </div>
                     </div>
 
@@ -81,14 +106,17 @@
                     </ul>
 
                     <p>
-                        Download the
+                        Download
                         <a href="{{ $.Site.Params.dexreleases_url }}" rel="noopener noreferrer">
-                        standalone application</a>, <br/>
-                        {{ $umbrel := resources.Get "/images/umbrel.svg" }}
-                        or add it to your <img height="12px" src="{{ $umbrel.Permalink }}" /> 
-                        <a href="{{ $.Site.Params.umbrel_community_app_store_url }}" rel="noopener noreferrer">
-                            Umbrel
-                        </a>
+                        Bison Wallet</a>
+                        <div class="d-none">
+                            , <br/>
+                            {{ $umbrel := resources.Get "/images/umbrel.svg" }}
+                            or add it to your <img height="12px" src="{{ $umbrel.Permalink }}" /> 
+                            <a href="{{ $.Site.Params.umbrel_community_app_store_url }}" rel="noopener noreferrer">
+                                Umbrel
+                            </a>
+                        </div>
                     </p>
 
                     <p class="larger">

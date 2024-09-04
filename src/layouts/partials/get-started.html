@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6 text-center">
-                {{ $getstarted := resources.Get "/images/get-started2.png" }}
+                {{ $getstarted := resources.Get "/images/showcase.png" }}
                 <img class="getstartedimg" src="{{ $getstarted.Permalink }}" />
             </div>
             <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
@@ -24,13 +24,17 @@
                         </label>
                         <div class="accordion-body">
                             <p>
-                                For the standalone DCRDEX application, <code>dexc</code>, the
-                                latest release can always be found on
+                                Use one of the options above to download Bison Wallet.
+                                The latest release can always be found on
                                 <a href="https://github.com/decred/dcrdex/releases/latest" target="_blank" rel="noopener noreferrer">
                                     GitHub</a>.
-                                Download and extract the archive for your system, and
-                                <span class="bold">from a command prompt</span> in the extracted folder,
-                                run <code>dexc</code>. Open the displayed URL in the web browser
+                            </p>
+                            <p>
+                                <span class="bold">For the installed version</span>, 
+                                open Bison Wallet using your system's application menu.
+                            </p>
+                            <p>
+                                <span class="bold">If you're running a binary from a terminal</span>, open the displayed URL in the web browser
                                 of your choice.
                             </p>
                             <p>
@@ -54,12 +58,19 @@
                             </div>
                         </label>
                         <div class="accordion-body">
-                            With DCRDEX opened in a browser or Decrediton, set a new "application
-                            password." Do not forget it!<br><br>
-                            <span class="bold">Tip:</span> Before moving on, retrieve the application
-                            "seed" from the settings page and store it in a safe place. This is used
-                            to restore wallets and accounts created by the DEX application. Click on
-                            the DCRDEX logo to resume setup.
+                            <p>
+                                Start Bison Wallet or Decrediton.
+                                If using Decrediton, navigate to the DCRDEX interface.
+                            </p>
+                            <p>
+                                Set a new "application password".
+                                Do not forget it!
+                            </p>
+                            <p>
+                                If you already have a seed and are restoring your
+                                wallet, enter that seed now. Otherwise, a new seed
+                                will be generated for you.
+                            </p>
                         </div>
 
                         <input type="radio" name="get-started-accordion" id="get-started-accordion-3">
@@ -68,18 +79,22 @@
                                 <div class="plus-minus">
                                     <div class="hznt"></div><div class="vrt"></div>
                                 </div>
-                                <div>3. Configure Wallets</div>
+                                <div>3. Configure Assets and Backup Seed</div>
                             </div>
                         </label>
                         <div class="accordion-body">
-                            <p>Choose a server and you will be guided through setup of your
-                            wallets.</p>
-                            <p>There are native (built-in to dexc) wallets for both Decred
-                            and Bitcoin. You may also use your own Electrum wallet for Bitcoin
-                            and Litecoin. For DOGE, ZEC, and BCH, use their full node wallets
-                            (e.g. dogecoind, zcashd, etc.).</p>
-                            <p>For the native wallets, just click "Create!".</p>
-                            <p>You can access the Wallets page at any time.</p>
+                            <p>
+                                The quick configuration dialog will offer you the
+                                option to intitialize built-in wallets and connect
+                                to known servers.
+                            </p>
+                            <p>
+                                If you aren't restoring from seed, you will be prompted
+                                to back up your newly generated application seed.
+                                Make sure to copy the seed carefully and put it somewhere safe.
+                                This seed is used to restore native wallets.
+                                Anyone with this seed has access to your funds.
+                            </p>
                         </div>
                     
                         <input type="radio" name="get-started-accordion" id="get-started-accordion-4">
@@ -92,14 +107,17 @@
                             </div>
                         </label>
                         <div class="accordion-body">
-                            Once your wallets are synchronized, you will be prompted
-                            to submit a one-time fee before placing orders. This is a small amount
-                            just to discourage disruptive behavior.<br><br>
-                            The application will inform you how much is required in your new wallet
-                            to register. But deposit as much as you like to your wallet 
-                            since only the required amount will be spent, and the remaining will be
-                            ready for trading. Deposits must confirm before proceeding. Then click
-                            "Register!" to proceed.
+                            <p>
+                                Navigate to the settings view and connect to a DCRDEX server to access trading markets.
+                                You can connect to a server and view market activity without cost, but if
+                                you want to trade, you'll need to post a bond.
+                            <p>
+                            </p>
+                                A bond is some amount of funds that will remain locked up
+                                on-chain for a while before you can retrieve them.
+                                This is an anti-spam measure to keep trades completing
+                                with fewer refunds.
+                            </p>
                         </div>
                     
                         <input type="radio" name="get-started-accordion" id="get-started-accordion-5">
@@ -108,12 +126,24 @@
                                 <div class="plus-minus">
                                     <div class="hznt"></div><div class="vrt"></div>
                                 </div>
-                                <div>5. Placing Orders</div>
+                                <div>5. Trade</div>
                             </div>
                         </label>
                         <div class="accordion-body">
-                            To place an order, fill out the price, the lot quantity, and submit it.
-                            Stay online and keep everything running until the trade settles.
+                            <p>
+                                Once you are bonded and you have the necessary
+                                wallet configured, you'll see an order form in the
+                                markets view.
+                            </p>
+                            <p>
+                                Set your price, quantity, and whether you are buying
+                                or selling, and then place an order. Orders will take
+                                between 0 and 15 seconds to start matching.
+                                Once you get matches, a settlement phase will begin
+                                which, depending on the assets and network conditions,
+                                may last only a few minutes, or last an hour or more in the
+                                worst case. The price you matched will never change.
+                            </p>
                         </div>
     
                         <div style="flex: 1;"></div>
