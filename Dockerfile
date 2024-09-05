@@ -25,7 +25,7 @@ RUN rm -rf public resources
 RUN hugo --buildFuture
 
 # Serve image (stable nginx version)
-FROM nginx:1.22-alpine
+FROM nginx:1.26-alpine
 
 LABEL description="dexweb server"
 LABEL version="1.0"
